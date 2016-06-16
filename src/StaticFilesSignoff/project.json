@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "version": "1.0.0-rc3-004408",
+      "version": "1.0.0-rc3-004443-00",
       "type": "platform"
     },
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc3-21332",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc3-21332",
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0-rc3-21332",
-    "Microsoft.Extensions.FileProviders.Embedded": "1.0.0-rc3-21332"
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc3-*",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc3-*",
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0-rc3-*",
+    "Microsoft.Extensions.FileProviders.Embedded": "1.0.0-rc3-*"
   },
 
   "tools": {
