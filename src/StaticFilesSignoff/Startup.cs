@@ -139,7 +139,7 @@ namespace StaticFilesSignoff
                 DefaultFileNames = new[] { "TextFile.txt" },
                 FileProvider = fs
             });
-            app.UseFileServer(new FileServerOptions()
+            app.UseStaticFiles(new StaticFileOptions()
             {
                 FileProvider = fs,
             });
