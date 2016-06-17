@@ -10,6 +10,7 @@ rm -v ../../local/$FXPKG
 if [[ $FXCOPYTO ]]; then
 	rm -rfv "$FXCOPYTO/$FXNAME"
 fi
+rm -vrf ~/.nuget/packages/$FXNAME
 
 
 echo "===== Building framework"
