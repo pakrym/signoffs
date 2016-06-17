@@ -17,7 +17,7 @@ echo "===== Building framework"
 dotnet restore
 dotnet publish -o $FXOUT
 rm -v $FXOUT/$FXNAME.exe
-rm -v $FXOUT/$FXNAME.dll
+rm -v $FXOUT/$FXNAME
 rm -v $FXOUT/$FXNAME.pdb
 rm -v $FXOUT/$FXNAME.runtimeconfig.*
 FXDEPS=$FXOUT/$FXNAME.deps.json
