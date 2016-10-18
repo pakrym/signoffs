@@ -14,7 +14,7 @@ namespace Compression
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseUrls("http://*:5000")
+                .UseUrls(Environment.GetEnvironmentVariable("ASPNETCORE_URLS")?? "http://*:5000")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
