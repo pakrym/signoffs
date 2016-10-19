@@ -14,6 +14,7 @@ namespace Diagnostics
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseUrls(Environment.GetEnvironmentVariable("ASPNETCORE_URLS") ?? "http://*:5000")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
