@@ -30,6 +30,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Respon
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Buffering", "..\aspnet\BasicMiddleware\src\Microsoft.AspNetCore.Buffering\Microsoft.AspNetCore.Buffering.xproj", "{2363D0DD-A3BF-437E-9B64-B33AE132D875}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Diagnostics", "src\Diagnostics\Diagnostics.xproj", "{40248F66-681D-4AC0-876C-009F4AD7A4B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{2363D0DD-A3BF-437E-9B64-B33AE132D875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2363D0DD-A3BF-437E-9B64-B33AE132D875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2363D0DD-A3BF-437E-9B64-B33AE132D875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40248F66-681D-4AC0-876C-009F4AD7A4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40248F66-681D-4AC0-876C-009F4AD7A4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40248F66-681D-4AC0-876C-009F4AD7A4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40248F66-681D-4AC0-876C-009F4AD7A4B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +84,6 @@ Global
 		{D2F574F1-FCFF-4C96-99B3-C7AC469E16D6} = {83518531-F8FE-4F49-96CE-7AB5595B7F17}
 		{A54CFAFE-7F97-4268-8330-520E0C61D7F4} = {83518531-F8FE-4F49-96CE-7AB5595B7F17}
 		{F86F4453-19E1-45CC-9E32-93FA0F15F519} = {83518531-F8FE-4F49-96CE-7AB5595B7F17}
+		{40248F66-681D-4AC0-876C-009F4AD7A4B2} = {83518531-F8FE-4F49-96CE-7AB5595B7F17}
 	EndGlobalSection
 EndGlobal
