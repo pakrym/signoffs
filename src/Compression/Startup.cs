@@ -41,7 +41,6 @@ namespace Compression
                     while (!w.RequestAborted.IsCancellationRequested)
                     {
                         await w.Response.WriteAsync("1");
-                        await w.Response.Body.FlushAsync();
                         await Task.Delay(TimeSpan.FromSeconds(0.1));
                     }
                 });
@@ -60,13 +59,30 @@ namespace Compression
                     while (!w.RequestAborted.IsCancellationRequested)
                     {
                         await w.Response.WriteAsync("1");
+                        await Task.Delay(TimeSpan.FromSeconds(0.1));
+                    }
+                });
+            });
+            app.Map("/slowf", a =>
+            {
+                a.UseResponseCompression();
+
+                a.Run(async w =>
+                {
+                    w.Response.Headers["Content-Type"] = "text/html";
+
+                    while (!w.RequestAborted.IsCancellationRequested)
+                    {
+                        await w.Response.WriteAsync("1");
                         await w.Response.Body.FlushAsync();
                         await Task.Delay(TimeSpan.FromSeconds(0.1));
                     }
                 });
             });
-            app.Map("/slownc", a =>
+            app.Map("/slownbf", a =>
             {
+                a.UseResponseCompression();
+
                 a.Run(async w =>
                 {
                     w.Response.Headers["Content-Type"] = "text/html";
@@ -77,6 +93,7 @@ namespace Compression
                     while (!w.RequestAborted.IsCancellationRequested)
                     {
                         await w.Response.WriteAsync("1");
+                        await w.Response.Body.FlushAsync();
                         await Task.Delay(TimeSpan.FromSeconds(0.1));
                     }
                 });
